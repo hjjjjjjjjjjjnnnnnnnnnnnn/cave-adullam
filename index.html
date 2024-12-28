@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fellowship Church</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fdf6f6;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #710b04;
+            padding: 20px 50px;
+        }
+        nav a {
+            margin: 0 15px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffc9c9;
+        }
+        .hero {
+            background-image: url(images/back.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 120px 20px;
+        }
+        .hero h1 {
+            font-size: 3.5em;
+            color: #ff8585;
+        }
+        .hero button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            border: none;
+            background-color: #ff6b6b;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .hero button:hover {
+            background-color: #710b04;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5em;
+            color: #710b04;
+        }
+        section p, section ul li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .service-times, .events , .vision , .testimonies , .article , .contact{
+            background-color: #fccece;
+        }
+        footer {
+            background-color: #710b04;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #ffc9c9;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .logo img {
+            width: 60px;
+        }
+        input, textarea {
+            width: 80%;
+            max-width: 500px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #ff6b6b;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button[type="submit"]:hover {
+            background-color: #710b04;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/tcaf-removebg-preview.png" alt="Logo"></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#vision">Vision</a>
+            <a href="#mission">Mission</a>
+            <a href="#events">Events</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#testimonies">Testimonies</a>
+            <a href="#visionary">Visionary</a>
+            <a href="#contact">Contact</a>
+            <a href="#partnership">Partnership</a>
+            <a href="#articles">Articles</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>The Cave Adullam Fellowship</h1>
+        <p>A place to grow, connect, and worship together.</p>
+        <button>Join Us</button>
+    </div>
+
+    <section id="about">
+        <h2>Who We Are</h2>
+        <p>Our mission is to guide people into a growing relationship with Jesus Christ.</p>
+    </section>
+
+    <section class="vision" id="vision">
+        <h2>Vision</h2>
+        <p>To win and properly disciple 1,000,000 souls to Christ in 21,000 schools in Nigeria and across Africa.</p>
+    </section>
+
+    <section id="mission">
+        <h2>Mission</h2>
+        <ul>
+            <li><strong>School Outreaches:</strong> Share the gospel, provide healing and deliverance, and inspire greatness in 1,000,000 teenagers by 2030.</li>
+            <li><strong>School Fellowship:</strong> Establish TCAf fellowships in 21,000 schools across Nigeria and Africa.</li>
+            <li><strong>School Discipleship:</strong> Distribute discipleship manuals to 1,000,000 students, promoting spiritual growth.</li>
+            <li><strong>Campus Ministry:</strong> Spread the gospel through various methods, establish fellowships, and train leaders on campuses.</li>
+            <li><strong>Charity & Academic Support:</strong> Offer tutorials, study materials, relief packages, and scholarships to 10,000 underprivileged students.</li>
+        </ul>
+    </section>
+
+    <section id="events" class="events">
+        <h2>What's Happening</h2>
+        <p>Check out our latest events and community activities.</p>
+        <button>View All Events</button>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Explore moments captured in our ministry and events.</p>
+    </section>
+
+    <section class="testimonies" id="testimonies">
+        <h2>Testimonies</h2>
+        <p>Read stories of transformation and impact through our ministry.</p>
+    </section>
+
+    <section id="visionary">
+        <h2>Meet the Visionary</h2>
+        <p>Discover the passion and leadership behind our mission.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="partnership">
+        <h2>Partnership</h2>
+        <p>Learn how you can partner with us to achieve our mission.</p>
+    </section>
+
+    <section class="article" id="articles">
+        <h2>Articles</h2>
+        <p>Read insights, stories, and spiritual guidance on our blog.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fellowship Church. All Rights Reserved.</p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </footer>
+</body>
+</html>
